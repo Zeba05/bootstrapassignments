@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>navbar</title>
+</head>
+
+<body>
+    <h1>navbar</h1>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web dev</a></li>
+                            <li><a class="dropdown-item" href="#">Data Science</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Aptitude</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <h3>Image and text
+        You can also make use of some additional utilities to add an image and text at the same time. </h3>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="data:image/jpeg;base64,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"
+                    alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Bootstrap
+            </a>
+        </div>
+    </nav>
+    <nav class="navbar navbar-light bg-light">
+        <form class="container-fluid">
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+        </form>
+      </nav>
+    
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web dev</a></li>
+                            <li><a class="dropdown-item" href="#">Data Science</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Aptitude</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>      </nav>
+        
+</body>
+
+</html>
